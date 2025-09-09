@@ -34,7 +34,7 @@ The goal was to implement, analyze, and extend reinforcement learning (RL) algor
 - Tuned actor/critic network architectures to achieve competitive performance. Achieved more stable and increased results from the given baseline.
 - Key files: `agents.py`, `train_ddpg.py`, `evaluate_ddpg.py`
 
-### **Algorithm Extensions on Tabular Reinforcement Learning**
+### **Evaluating UCB vs. ε-Greedy Exploration in Tabular and DQN Settings**
 - Implemented Upper Confidence Bound (UCB) as an exploration strategy in both tabular (DiscereRL) and function approximation (DQN) settings, and compared it against ε-greedy.
 - Showed that while ε-greedy explores randomly, UCB leverages a confidence bonus to encourage exploration of less-visited actions, resulting in more intelligent exploration paths.
 - Results indicated that UCB provides more stable long-term performance in the tabular setting, though both strategies suffer from high variance and low returns. In the DQN setting, UCB initially learns slower but eventually outperforms ε-greedy by achieving lower variance and better average returns (-107 vs -110).
